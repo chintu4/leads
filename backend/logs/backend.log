@@ -442,3 +442,5 @@ RuntimeWarning: Enable tracemalloc to get the object allocation traceback
 2025-12-17 18:59:54 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 100, 'url': 'https://pubmed.ncbi.nlm.nih.gov/33028601/', 'processed_so_far': 0}
 2025-12-17 18:59:54 INFO root - Scrape complete for query=toxonomy, results=0
 2025-12-17 18:59:54 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': []}
+2025-12-17 19:14:44 INFO STDOUT - INFO:     127.0.0.1:50424 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 19:14:45 INFO STDOUT - INFO:     127.0.0.1:50424 - "GET /auth/session HTTP/1.1" 200 OK
