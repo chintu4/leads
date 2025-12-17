@@ -331,3 +331,114 @@ RuntimeWarning: Enable tracemalloc to get the object allocation traceback
 2025-12-17 18:49:03 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24716516/', 'processed_so_far': 0}
 2025-12-17 18:49:03 INFO root - sse: yielding event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24716516/', 'processed_so_far': 0}
 2025-12-17 18:49:04 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:50:18 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/4573549/ (percent=20)
+2025-12-17 18:50:18 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/4573549/', 'processed_so_far': 0}
+2025-12-17 18:50:18 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/1069019/ (idx=3/10)
+2025-12-17 18:50:18 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/1069019/', 'processed_so_far': 0}
+2025-12-17 18:50:18 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:51:18 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/24716516/ (percent=30)
+2025-12-17 18:51:18 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 30, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24716516/', 'processed_so_far': 0}
+2025-12-17 18:51:18 INFO root - sse: yielding event: {'type': 'progress', 'percent': 30, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24716516/', 'processed_so_far': 0}
+2025-12-17 18:51:18 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/28261518/ (idx=4/10)
+2025-12-17 18:51:18 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 30, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28261518/', 'processed_so_far': 0}
+2025-12-17 18:51:18 INFO root - sse: yielding event: {'type': 'progress', 'percent': 30, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28261518/', 'processed_so_far': 0}
+2025-12-17 18:51:18 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:53:25 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/28261518/ (percent=40)
+2025-12-17 18:53:25 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 40, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28261518/', 'processed_so_far': 0}
+2025-12-17 18:53:25 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/28796215/ (idx=5/10)
+2025-12-17 18:53:25 INFO root - sse: yielding event: {'type': 'progress', 'percent': 40, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28261518/', 'processed_so_far': 0}
+2025-12-17 18:53:25 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 40, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28796215/', 'processed_so_far': 0}
+2025-12-17 18:53:25 INFO root - sse: yielding event: {'type': 'progress', 'percent': 40, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28796215/', 'processed_so_far': 0}
+2025-12-17 18:53:26 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:54:25 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/1069019/ (percent=30)
+2025-12-17 18:54:25 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 30, 'url': 'https://pubmed.ncbi.nlm.nih.gov/1069019/', 'processed_so_far': 0}
+2025-12-17 18:54:25 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/14898362/ (idx=4/10)
+2025-12-17 18:54:26 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 30, 'url': 'https://pubmed.ncbi.nlm.nih.gov/14898362/', 'processed_so_far': 0}
+2025-12-17 18:54:26 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:55:31 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/28796215/ (percent=50)
+2025-12-17 18:55:32 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 50, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28796215/', 'processed_so_far': 0}
+2025-12-17 18:55:32 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/39292004/ (idx=6/10)
+2025-12-17 18:55:32 INFO root - sse: yielding event: {'type': 'progress', 'percent': 50, 'url': 'https://pubmed.ncbi.nlm.nih.gov/28796215/', 'processed_so_far': 0}
+2025-12-17 18:55:32 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 50, 'url': 'https://pubmed.ncbi.nlm.nih.gov/39292004/', 'processed_so_far': 0}
+2025-12-17 18:55:32 INFO root - sse: yielding event: {'type': 'progress', 'percent': 50, 'url': 'https://pubmed.ncbi.nlm.nih.gov/39292004/', 'processed_so_far': 0}
+2025-12-17 18:55:32 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:56:46 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/?term=%22Hepatophyta%22%5BMAJR%5D&sort=date&sort_order=desc', 'msg': 'navigation timeout'}
+2025-12-17 18:57:07 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/39292004/', 'msg': 'navigation timeout'}
+2025-12-17 18:59:08 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/14898362/ (percent=40)
+2025-12-17 18:59:08 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 40, 'url': 'https://pubmed.ncbi.nlm.nih.gov/14898362/', 'processed_so_far': 0}
+2025-12-17 18:59:08 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/14816024/ (idx=5/10)
+2025-12-17 18:59:08 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 40, 'url': 'https://pubmed.ncbi.nlm.nih.gov/14816024/', 'processed_so_far': 0}
+2025-12-17 18:59:09 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:14 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/14816024/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/14816024/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/14816024/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:16 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/39292004/ (percent=60)
+2025-12-17 18:59:16 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 60, 'url': 'https://pubmed.ncbi.nlm.nih.gov/39292004/', 'processed_so_far': 0}
+2025-12-17 18:59:16 INFO root - sse: yielding event: {'type': 'progress', 'percent': 60, 'url': 'https://pubmed.ncbi.nlm.nih.gov/39292004/', 'processed_so_far': 0}
+2025-12-17 18:59:16 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/32887961/ (idx=7/10)
+2025-12-17 18:59:16 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 60, 'url': 'https://pubmed.ncbi.nlm.nih.gov/32887961/', 'processed_so_far': 0}
+2025-12-17 18:59:16 INFO root - sse: yielding event: {'type': 'progress', 'percent': 60, 'url': 'https://pubmed.ncbi.nlm.nih.gov/32887961/', 'processed_so_far': 0}
+2025-12-17 18:59:16 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:19 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/32887961/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/32887961/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/32887961/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:20 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/14816024/ (percent=50)
+2025-12-17 18:59:20 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 50, 'url': 'https://pubmed.ncbi.nlm.nih.gov/14816024/', 'processed_so_far': 0}
+2025-12-17 18:59:20 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/14851149/ (idx=6/10)
+2025-12-17 18:59:20 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 50, 'url': 'https://pubmed.ncbi.nlm.nih.gov/14851149/', 'processed_so_far': 0}
+2025-12-17 18:59:20 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/32887961/ (percent=70)
+2025-12-17 18:59:20 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:20 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 70, 'url': 'https://pubmed.ncbi.nlm.nih.gov/32887961/', 'processed_so_far': 0}
+2025-12-17 18:59:20 INFO root - sse: yielding event: {'type': 'progress', 'percent': 70, 'url': 'https://pubmed.ncbi.nlm.nih.gov/32887961/', 'processed_so_far': 0}
+2025-12-17 18:59:20 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/24321863/ (idx=8/10)
+2025-12-17 18:59:20 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 70, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24321863/', 'processed_so_far': 0}
+2025-12-17 18:59:20 INFO root - sse: yielding event: {'type': 'progress', 'percent': 70, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24321863/', 'processed_so_far': 0}
+2025-12-17 18:59:20 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:23 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/14851149/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/14851149/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/14851149/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:23 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/24321863/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/24321863/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/24321863/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:24 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/14851149/ (percent=60)
+2025-12-17 18:59:24 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 60, 'url': 'https://pubmed.ncbi.nlm.nih.gov/14851149/', 'processed_so_far': 0}
+2025-12-17 18:59:24 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/22139910/ (idx=7/10)
+2025-12-17 18:59:24 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 60, 'url': 'https://pubmed.ncbi.nlm.nih.gov/22139910/', 'processed_so_far': 0}
+2025-12-17 18:59:24 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:24 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/24321863/ (percent=80)
+2025-12-17 18:59:24 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 80, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24321863/', 'processed_so_far': 0}
+2025-12-17 18:59:24 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/24244913/ (idx=9/10)
+2025-12-17 18:59:24 INFO root - sse: yielding event: {'type': 'progress', 'percent': 80, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24321863/', 'processed_so_far': 0}
+2025-12-17 18:59:24 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 80, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24244913/', 'processed_so_far': 0}
+2025-12-17 18:59:24 INFO root - sse: yielding event: {'type': 'progress', 'percent': 80, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24244913/', 'processed_so_far': 0}
+2025-12-17 18:59:24 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:35 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/22139910/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/22139910/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/22139910/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:36 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/24244913/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/24244913/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/24244913/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:37 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/24244913/ (percent=90)
+2025-12-17 18:59:37 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 90, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24244913/', 'processed_so_far': 0}
+2025-12-17 18:59:37 INFO root - sse: yielding event: {'type': 'progress', 'percent': 90, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24244913/', 'processed_so_far': 0}
+2025-12-17 18:59:37 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/40985657/ (idx=10/10)
+2025-12-17 18:59:37 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 90, 'url': 'https://pubmed.ncbi.nlm.nih.gov/40985657/', 'processed_so_far': 0}
+2025-12-17 18:59:37 INFO root - sse: yielding event: {'type': 'progress', 'percent': 90, 'url': 'https://pubmed.ncbi.nlm.nih.gov/40985657/', 'processed_so_far': 0}
+2025-12-17 18:59:37 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:37 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/22139910/ (percent=70)
+2025-12-17 18:59:37 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 70, 'url': 'https://pubmed.ncbi.nlm.nih.gov/22139910/', 'processed_so_far': 0}
+2025-12-17 18:59:37 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/29119432/ (idx=8/10)
+2025-12-17 18:59:37 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 70, 'url': 'https://pubmed.ncbi.nlm.nih.gov/29119432/', 'processed_so_far': 0}
+2025-12-17 18:59:37 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:39 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/29119432/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/29119432/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/29119432/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:39 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/40985657/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/40985657/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/40985657/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:40 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/40985657/ (percent=100)
+2025-12-17 18:59:40 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 100, 'url': 'https://pubmed.ncbi.nlm.nih.gov/40985657/', 'processed_so_far': 0}
+2025-12-17 18:59:40 INFO root - Scrape complete for query=toxonomy, results=0
+2025-12-17 18:59:40 INFO root - sse: yielding event: {'type': 'progress', 'percent': 100, 'url': 'https://pubmed.ncbi.nlm.nih.gov/40985657/', 'processed_so_far': 0}
+2025-12-17 18:59:40 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': []}
+2025-12-17 18:59:40 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': []}
+2025-12-17 18:59:40 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/29119432/ (percent=80)
+2025-12-17 18:59:40 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 80, 'url': 'https://pubmed.ncbi.nlm.nih.gov/29119432/', 'processed_so_far': 0}
+2025-12-17 18:59:40 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/24102715/ (idx=9/10)
+2025-12-17 18:59:40 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 80, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24102715/', 'processed_so_far': 0}
+2025-12-17 18:59:40 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:42 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/24102715/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/24102715/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/24102715/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:42 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/24102715/ (percent=90)
+2025-12-17 18:59:42 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 90, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24102715/', 'processed_so_far': 0}
+2025-12-17 18:59:42 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/33028601/ (idx=10/10)
+2025-12-17 18:59:42 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 90, 'url': 'https://pubmed.ncbi.nlm.nih.gov/33028601/', 'processed_so_far': 0}
+2025-12-17 18:59:42 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:59:53 INFO root - deep crawl error: {'type': 'error', 'phase': 'deep', 'url': 'https://pubmed.ncbi.nlm.nih.gov/33028601/', 'msg': 'Page.goto: net::ERR_NETWORK_ACCESS_DENIED at https://pubmed.ncbi.nlm.nih.gov/33028601/\nCall log:\n  - navigating to "https://pubmed.ncbi.nlm.nih.gov/33028601/", waiting until "domcontentloaded"\n'}
+2025-12-17 18:59:54 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/33028601/ (percent=100)
+2025-12-17 18:59:54 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 100, 'url': 'https://pubmed.ncbi.nlm.nih.gov/33028601/', 'processed_so_far': 0}
+2025-12-17 18:59:54 INFO root - Scrape complete for query=toxonomy, results=0
+2025-12-17 18:59:54 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': []}
