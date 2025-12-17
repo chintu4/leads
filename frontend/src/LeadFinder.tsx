@@ -10,7 +10,7 @@ const API_BASE = ((): string => {
   const port = window.location.port;
   // when developing with the frontend dev server on 3000, point to backend on 8000
   if (host === 'localhost' && port === '3000') return 'http://localhost:8000';
-  return '';
+  return 'https://leads-59wq.onrender.com';
 })();
 
 export type Lead = {
