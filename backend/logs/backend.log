@@ -1,0 +1,333 @@
+2025-12-17 17:35:59 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 17:36:01 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 17:36:01 ERROR STDERR - INFO:     Started server process [15128]
+2025-12-17 17:36:01 ERROR STDERR - INFO:     Waiting for application startup.
+2025-12-17 17:36:01 ERROR STDERR - INFO:     Application startup complete.
+2025-12-17 17:36:01 ERROR STDERR - INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+2025-12-17 17:36:08 INFO STDOUT - INFO:     127.0.0.1:53739 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 17:36:08 INFO STDOUT - INFO:     127.0.0.1:53739 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 17:36:21 INFO STDOUT - INFO:     127.0.0.1:57219 - "GET /scrape/stream?input=toxonomy HTTP/1.1" 200 OK
+2025-12-17 17:36:21 INFO root - sse: worker started for input=toxonomy
+2025-12-17 17:36:22 DEBUG primp.utils - Loaded CA certs
+2025-12-17 17:36:22 DEBUG primp.utils - Loaded CA certs
+2025-12-17 17:36:22 DEBUG primp.utils - Loaded CA certs
+2025-12-17 17:36:22 DEBUG primp.utils - Loaded CA certs
+2025-12-17 17:36:22 DEBUG primp.utils - Loaded CA certs
+2025-12-17 17:36:23 DEBUG rquest.connect - starting new connection: https://en.wikipedia.org/
+2025-12-17 17:36:23 DEBUG rquest.connect - starting new connection: https://yandex.com/
+2025-12-17 17:36:23 DEBUG rquest.util.client.connect.dns - resolving yandex.com
+2025-12-17 17:36:23 DEBUG rquest.util.client.connect.dns - resolving en.wikipedia.org
+2025-12-17 17:36:23 DEBUG rquest.util.client.connect.http - connecting to [2001:df2:e500:ed1a::1]:443
+2025-12-17 17:36:23 DEBUG rquest.util.client.connect.http - connected to [2001:df2:e500:ed1a::1]:443
+2025-12-17 17:36:23 DEBUG rquest.util.client.connect.http - connecting to [2a02:6b8:a::a]:443
+2025-12-17 17:36:23 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2025-12-17 17:36:23 DEBUG rquest.util.client.connect.http - connected to [2a02:6b8:a::a]:443
+2025-12-17 17:36:23 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://yandex.com/, alpn_protos: None, network: default }
+2025-12-17 17:36:23 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Last-Access'
+2025-12-17 17:36:23 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Last-Access-Global'
+2025-12-17 17:36:23 DEBUG cookie_store.cookie_store - inserting secure cookie 'GeoIP'
+2025-12-17 17:36:23 DEBUG cookie_store.cookie_store - inserting secure cookie 'NetworkProbeLimit'
+2025-12-17 17:36:23 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Uniq'
+2025-12-17 17:36:23 INFO primp - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=toxonomy%20site%3Apubmed.ncbi.nlm.nih.gov%20author 200
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting secure cookie 'is_gdpr'
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting secure cookie 'is_gdpr_b'
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting secure cookie '_yasc'
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting secure cookie 'i'
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting secure cookie 'yandexuid'
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting secure cookie 'yashr'
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting secure cookie 'bh'
+2025-12-17 17:36:24 INFO primp - response: https://yandex.com/search/site/?text=toxonomy+site%3Apubmed.ncbi.nlm.nih.gov+author&web=1&searchid=8978598 200
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("arc=us"), name: Indexed(0, 3), value: Indexed(4, 6), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 17:36:24 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("lb=en"), name: Indexed(0, 2), value: Indexed(3, 5), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 17:36:24 DEBUG rquest.connect - starting new connection: https://www.mojeek.com/
+2025-12-17 17:36:24 DEBUG rquest.util.client.connect.dns - resolving www.mojeek.com
+2025-12-17 17:36:25 DEBUG rquest.util.client.connect.http - connecting to 5.102.173.68:443
+2025-12-17 17:36:25 DEBUG rquest.util.client.connect.http - connected to 5.102.173.68:443
+2025-12-17 17:36:27 INFO primp - response: https://www.mojeek.com/search?q=toxonomy+site%3Apubmed.ncbi.nlm.nih.gov+author 200
+2025-12-17 17:36:27 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://www.mojeek.com/, alpn_protos: None, network: default }
+2025-12-17 17:36:27 DEBUG rquest.connect - starting new connection: https://search.yahoo.com/
+2025-12-17 17:36:27 DEBUG rquest.util.client.connect.dns - resolving search.yahoo.com
+2025-12-17 17:36:27 DEBUG rquest.util.client.connect.http - connecting to [2406:2000:e4:1404::3000]:443
+2025-12-17 17:36:27 DEBUG rquest.util.client.connect.http - connected to [2406:2000:e4:1404::3000]:443
+2025-12-17 17:36:27 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://search.yahoo.com/, alpn_protos: None, network: default }
+2025-12-17 17:36:28 DEBUG cookie_store.cookie_store - inserting secure cookie 'lkl'
+2025-12-17 17:36:28 DEBUG cookie_store.cookie_store - inserting secure cookie 'A1'
+2025-12-17 17:36:28 DEBUG cookie_store.cookie_store - inserting secure cookie 'A3'
+2025-12-17 17:36:28 DEBUG cookie_store.cookie_store - inserting secure cookie 'A1S'
+2025-12-17 17:36:28 DEBUG cookie_store.cookie_store - inserting secure cookie 'dflow'
+2025-12-17 17:36:28 INFO primp - response: https://search.yahoo.com/search;_ylt=j5Rdo72Y2P49VJJEgpBUQhJN;_ylu=lkP9gfQ8bIgTAZPhnOR1vMuSw2OhOo-r8iTg6tF0urK8Qf8?p=toxonomy+site%3Apubmed.ncbi.nlm.nih.gov+author 200
+2025-12-17 17:36:28 INFO root - Host pubmed.ncbi.nlm.nih.gov: 10 results from query 'toxonomy site:pubmed.ncbi.nlm.nih.gov author'
+2025-12-17 17:36:28 DEBUG rquest.util.client.pool - reuse idle connection for PoolKey { uri: https://search.yahoo.com/, alpn_protos: None, network: default }
+2025-12-17 17:36:28 DEBUG rquest.util.client.pool - reuse idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2025-12-17 17:36:28 DEBUG cookie_store.cookie_store - inserting secure cookie 'lkl'
+2025-12-17 17:36:28 INFO primp - response: https://search.yahoo.com/search;_ylt=OjYK6uXC5bJmxCt9RuAzj7Bq;_ylu=gvKDgl9mcogeUqelsL8trwNHI7SrlR-k-oicrqVU9IaR2J8?p=toxonomy+site%3Alinkedin.com%2Fin%2F 200
+2025-12-17 17:36:29 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Uniq'
+2025-12-17 17:36:29 INFO primp - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=toxonomy%20site%3Alinkedin.com/in/ 200
+2025-12-17 17:36:29 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("arc=us"), name: Indexed(0, 3), value: Indexed(4, 6), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 17:36:29 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("lb=en"), name: Indexed(0, 2), value: Indexed(3, 5), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 17:36:29 DEBUG rquest.util.client.pool - reuse idle connection for PoolKey { uri: https://www.mojeek.com/, alpn_protos: None, network: default }
+2025-12-17 17:36:30 INFO primp - response: https://www.mojeek.com/search?q=toxonomy+site%3Alinkedin.com%2Fin%2F 200
+2025-12-17 17:36:30 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://www.mojeek.com/, alpn_protos: None, network: default }
+2025-12-17 17:36:30 DEBUG rquest.util.client.pool - reuse idle connection for PoolKey { uri: https://yandex.com/, alpn_protos: None, network: default }
+2025-12-17 17:36:30 INFO primp - response: https://yandex.com/search/site/?text=toxonomy+site%3Alinkedin.com%2Fin%2F&web=1&searchid=2270736 200
+2025-12-17 17:36:30 INFO root - Host linkedin.com: 10 results from query 'toxonomy site:linkedin.com/in/'
+2025-12-17 17:36:30 INFO root - Found 1 profile links and 10 non-profile URLs for query=toxonomy
+2025-12-17 17:36:30 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'title': 'Heather Hedden - Taxonomy Consultant | LinkedIn Ron Rice - TAXONOMY | ONTOLOGY | KNOWLEDGE GRAPH | LinkedIn Joseph Busch - Principal Analyst at Taxonomy Strategies ... Elan May - Taxonomy & Ontology | Information Architecture ... Jessica Talisman - LinkedIn Dan Segal - Taxonomy, ontology and text analytics | LinkedIn Zarqa Javed - Taxonomy and Ontology Professional | LinkedIn', 'href': 'https://www.linkedin.com/in/hedden', 'body': 'Taxonomy Consultant · I design, create, and edit taxonomies, information architecture, metadata, and ontologies for tagging, organizing, and managing content to support retrieval, search ... TAXONOMY | ONTOLOGY | KNOWLEDGE GRAPH · Principal-level taxonomist and ontologist with 20+ years experience developing semantic models to support classification, machine reasoning, information ... Joseph A. Busch is the Founder and Principal consultant of Taxonomy Strategies. He is a knowledge leader in metadata frameworks and taxonomy strategies for global 2000 companies, government ... I created and managed taxonomy and architected information for diverse tech environments, including noSQL, graph, and RDBMS environments. As an Semantic Engineer and Information Architect, I apply my extensive experience and education in data architecture, taxonomy , and ontology to build information systems that enhance user ... Client-focused Information Scientist with expertise in taxonomy and ontology development, autoclassification, content enrichment, semantic metadata, text analytics, and information retrieval. Taxonomy and Ontology Professional · Results-driven data analyst and taxonomist with over 20 years of experience in connecting users with the information they need and facilitating data-driven ...'}]}
+2025-12-17 17:36:30 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'title': 'Heather Hedden - Taxonomy Consultant | LinkedIn Ron Rice - TAXONOMY | ONTOLOGY | KNOWLEDGE GRAPH | LinkedIn Joseph Busch - Principal Analyst at Taxonomy Strategies ... Elan May - Taxonomy & Ontology | Information Architecture ... Jessica Talisman - LinkedIn Dan Segal - Taxonomy, ontology and text analytics | LinkedIn Zarqa Javed - Taxonomy and Ontology Professional | LinkedIn', 'href': 'https://www.linkedin.com/in/hedden', 'body': 'Taxonomy Consultant · I design, create, and edit taxonomies, information architecture, metadata, and ontologies for tagging, organizing, and managing content to support retrieval, search ... TAXONOMY | ONTOLOGY | KNOWLEDGE GRAPH · Principal-level taxonomist and ontologist with 20+ years experience developing semantic models to support classification, machine reasoning, information ... Joseph A. Busch is the Founder and Principal consultant of Taxonomy Strategies. He is a knowledge leader in metadata frameworks and taxonomy strategies for global 2000 companies, government ... I created and managed taxonomy and architected information for diverse tech environments, including noSQL, graph, and RDBMS environments. As an Semantic Engineer and Information Architect, I apply my extensive experience and education in data architecture, taxonomy , and ontology to build information systems that enhance user ... Client-focused Information Scientist with expertise in taxonomy and ontology development, autoclassification, content enrichment, semantic metadata, text analytics, and information retrieval. Taxonomy and Ontology Professional · Results-driven data analyst and taxonomist with over 20 years of experience in connecting users with the information they need and facilitating data-driven ...'}]}
+2025-12-17 17:36:32 INFO root - Starting scrape_progress for query=toxonomy (urls=10)
+2025-12-17 17:36:32 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0, 'url': None, 'processed_so_far': 0}
+2025-12-17 17:36:32 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/685479/ (idx=1/10)
+2025-12-17 17:36:32 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0, 'url': None, 'processed_so_far': 0}
+2025-12-17 17:36:32 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0, 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/', 'processed_so_far': 0}
+2025-12-17 17:36:32 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0, 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/', 'processed_so_far': 0}
+2025-12-17 17:38:32 WARNING root - Crawl timed out for https://pubmed.ncbi.nlm.nih.gov/685479/ after 120 seconds
+2025-12-17 17:38:33 INFO root - sse: enqueue event: {'type': 'error', 'msg': 'Crawl timed out for https://pubmed.ncbi.nlm.nih.gov/685479/', 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/'}
+2025-12-17 17:38:33 INFO root - sse: yielding event: {'type': 'error', 'msg': 'Crawl timed out for https://pubmed.ncbi.nlm.nih.gov/685479/', 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/'}
+2025-12-17 18:05:25 INFO STDOUT - INFO:     127.0.0.1:59706 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:05:41 INFO STDOUT - INFO:     127.0.0.1:50060 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:05:41 INFO STDOUT - INFO:     127.0.0.1:50060 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:06:21 INFO STDOUT - INFO:     127.0.0.1:60175 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:06:21 INFO STDOUT - INFO:     127.0.0.1:56086 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:09:58 INFO STDOUT - INFO:     127.0.0.1:49269 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:10:04 INFO STDOUT - INFO:     127.0.0.1:57303 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:17:38 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 18:17:39 INFO root - Host pubmed.ncbi.nlm.nih.gov: 3 results from query 'liver toxicity site:pubmed.ncbi.nlm.nih.gov'
+2025-12-17 18:17:39 INFO root - Host linkedin.com: 3 results from query 'liver toxicity site:linkedin.com'
+2025-12-17 18:17:39 INFO root - Host linkedin.com: 2 results from query 'toxicity site:linkedin.com'
+2025-12-17 18:17:40 DEBUG root - Scrape: skipping non-profile processed item from https://b.com: https://example.com/about
+2025-12-17 18:17:40 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:17:40 INFO root - sse: worker started for input=test
+2025-12-17 18:17:40 ERROR root - sse: worker error for input=test: fake_scrape_progress() got an unexpected keyword argument 'allowed_sources'
+Traceback (most recent call last):
+  File "C:\Users\dsjapnc\Desktop\leads\backend\main.py", line 93, in worker
+    handle.scrape_progress(input, max_results=max_results, allowed_sources=allowed_sources, progress_callback=progress_cb)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fake_scrape_progress() got an unexpected keyword argument 'allowed_sources'
+2025-12-17 18:17:41 INFO root - sse: yielding event: {'type': 'error', 'msg': "fake_scrape_progress() got an unexpected keyword argument 'allowed_sources'"}
+2025-12-17 18:17:41 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': []}
+2025-12-17 18:17:41 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:17:41 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:17:41 INFO root - sse: worker started for input=test
+2025-12-17 18:17:41 ERROR root - sse: worker error for input=test: fake_scrape_progress() got an unexpected keyword argument 'allowed_sources'
+Traceback (most recent call last):
+  File "C:\Users\dsjapnc\Desktop\leads\backend\main.py", line 93, in worker
+    handle.scrape_progress(input, max_results=max_results, allowed_sources=allowed_sources, progress_callback=progress_cb)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: fake_scrape_progress() got an unexpected keyword argument 'allowed_sources'
+2025-12-17 18:17:41 INFO root - sse: yielding event: {'type': 'error', 'msg': "fake_scrape_progress() got an unexpected keyword argument 'allowed_sources'"}
+2025-12-17 18:17:41 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': []}
+2025-12-17 18:17:41 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:18:11 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 18:18:14 INFO root - Host pubmed.ncbi.nlm.nih.gov: 3 results from query 'liver toxicity site:pubmed.ncbi.nlm.nih.gov'
+2025-12-17 18:18:14 INFO root - Host linkedin.com: 3 results from query 'liver toxicity site:linkedin.com'
+2025-12-17 18:18:14 INFO root - Host linkedin.com: 2 results from query 'toxicity site:linkedin.com'
+2025-12-17 18:18:14 INFO root - Found 2 profile links and 1 non-profile URLs for query=test-query
+2025-12-17 18:18:14 INFO root - Scrapy not available, skipping crawl: cannot import name 'crawl_url' from 'src.utils.scrapy_ok' (unknown location)
+2025-12-17 18:18:14 INFO root - Starting scrape_progress for query=test-query (urls=1)
+2025-12-17 18:18:14 INFO root - Starting crawl for url=https://example.com (idx=1/1)
+2025-12-17 18:18:14 INFO root - URL complete: https://example.com (percent=100)
+2025-12-17 18:18:14 INFO root - Scrape complete for query=test-query, results=0
+2025-12-17 18:18:14 DEBUG root - Scrape: skipping non-profile processed item from https://b.com: https://example.com/about
+2025-12-17 18:18:14 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:18:14 INFO root - sse: worker started for input=test
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:18:14 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:18:14 INFO root - sse: worker started for input=test
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:18:14 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:18:14 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:30:58 INFO STDOUT - INFO:     127.0.0.1:56115 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:30:58 INFO STDOUT - INFO:     127.0.0.1:56115 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:33:45 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 18:33:47 INFO root - Host pubmed.ncbi.nlm.nih.gov: 3 results from query 'liver toxicity site:pubmed.ncbi.nlm.nih.gov'
+2025-12-17 18:33:47 INFO root - Host linkedin.com: 3 results from query 'liver toxicity site:linkedin.com'
+2025-12-17 18:33:47 INFO root - Host linkedin.com: 2 results from query 'toxicity site:linkedin.com'
+2025-12-17 18:33:47 INFO root - Found 2 profile links and 1 non-profile URLs for query=test-query
+2025-12-17 18:33:47 INFO root - Scrapy not available, skipping crawl: cannot import name 'crawl_url' from 'src.utils.scrapy_ok' (unknown location)
+2025-12-17 18:33:47 INFO root - Starting scrape_progress for query=test-query (urls=1)
+2025-12-17 18:33:47 INFO root - Starting crawl for url=https://example.com (idx=1/1)
+2025-12-17 18:33:47 INFO root - URL complete: https://example.com (percent=100)
+2025-12-17 18:33:47 INFO root - Scrape complete for query=test-query, results=0
+2025-12-17 18:33:47 DEBUG root - Scrape: skipping non-profile processed item from https://b.com: https://example.com/about
+2025-12-17 18:33:47 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:33:47 INFO root - sse: worker started for input=test
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:33:47 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:33:47 INFO root - sse: worker started for input=test
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:33:47 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:33:47 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:35:02 INFO STDOUT - INFO:     127.0.0.1:56049 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:35:39 INFO STDOUT - INFO:     127.0.0.1:61360 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:35:39 INFO STDOUT - INFO:     127.0.0.1:61360 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:36:31 INFO STDOUT - INFO:     127.0.0.1:55345 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:36:40 INFO STDOUT - INFO:     127.0.0.1:65323 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:36:40 INFO STDOUT - INFO:     127.0.0.1:65323 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:38:41 INFO STDOUT - INFO:     127.0.0.1:56742 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:39:15 INFO STDOUT - INFO:     127.0.0.1:51414 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:39:15 INFO STDOUT - INFO:     127.0.0.1:57811 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 18:41:56 INFO src.logging_config - Logging initialized. File: c:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 18:41:57 INFO root - Host pubmed.ncbi.nlm.nih.gov: 3 results from query 'liver toxicity site:pubmed.ncbi.nlm.nih.gov'
+2025-12-17 18:41:57 INFO root - Host linkedin.com: 3 results from query 'liver toxicity site:linkedin.com'
+2025-12-17 18:41:57 INFO root - Host linkedin.com: 2 results from query 'toxicity site:linkedin.com'
+2025-12-17 18:41:57 INFO root - Found 2 profile links and 1 non-profile URLs for query=test-query
+2025-12-17 18:41:57 INFO root - Scrapy not available, skipping crawl: cannot import name 'crawl_url' from 'src.utils.scrapy_ok' (unknown location)
+2025-12-17 18:41:57 INFO root - Starting scrape_progress for query=test-query (urls=1)
+2025-12-17 18:41:57 INFO root - Starting crawl for url=https://example.com (idx=1/1)
+2025-12-17 18:41:57 INFO root - URL complete: https://example.com (percent=100)
+2025-12-17 18:41:57 INFO root - Scrape complete for query=test-query, results=0
+2025-12-17 18:41:57 DEBUG root - Scrape: skipping non-profile processed item from https://b.com: https://example.com/about
+2025-12-17 18:41:57 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:41:57 INFO root - sse: worker started for input=test
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:41:57 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:41:57 INFO root - sse: worker started for input=test
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'href': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'error', 'msg': 'Crawl timed out for https://example.com', 'url': 'https://example.com'}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'item', 'item': {'url': 'https://example.com', 'title': 'Example', 'emails': [], 'phones': [], 'linkedin_urls': [], 'location': [], 'text_content': ''}, 'percent': 50}
+2025-12-17 18:41:57 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO root - sse: yielding event: {'type': 'done', 'percent': 100, 'results': [{'url': 'https://example.com', 'title': 'Example'}]}
+2025-12-17 18:41:57 INFO httpx - HTTP Request: GET http://testserver/scrape/stream?input=test "HTTP/1.1 200 OK"
+2025-12-17 18:42:08 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 18:42:08 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:42:08 INFO STDOUT - Custom domains test passed
+2025-12-17 18:42:08 ERROR STDERR - C:\Users\dsjapnc\AppData\Local\Programs\Python\Python313\Lib\asyncio\events.py:89: RuntimeWarning: coroutine 'scrape_stream' was never awaited
+  self._context.run(self._callback, *self._args)
+RuntimeWarning: Enable tracemalloc to get the object allocation traceback
+2025-12-17 18:44:12 INFO STDOUT - INFO:     127.0.0.1:57079 - "GET /scrape/stream?input=toxonomy&max_results=5&domains=pubmed%2Clinkedin HTTP/1.1" 200 OK
+2025-12-17 18:44:12 INFO root - sse: worker started for input=toxonomy
+2025-12-17 18:44:12 DEBUG primp.utils - Loaded CA certs
+2025-12-17 18:44:12 DEBUG primp.utils - Loaded CA certs
+2025-12-17 18:44:12 DEBUG primp.utils - Loaded CA certs
+2025-12-17 18:44:12 DEBUG primp.utils - Loaded CA certs
+2025-12-17 18:44:12 DEBUG primp.utils - Loaded CA certs
+2025-12-17 18:44:12 DEBUG rquest.connect - starting new connection: https://search.yahoo.com/
+2025-12-17 18:44:12 DEBUG rquest.connect - starting new connection: https://en.wikipedia.org/
+2025-12-17 18:44:12 DEBUG rquest.util.client.connect.dns - resolving en.wikipedia.org
+2025-12-17 18:44:12 DEBUG rquest.util.client.connect.dns - resolving search.yahoo.com
+2025-12-17 18:44:12 DEBUG rquest.util.client.connect.http - connecting to [2406:2000:e4:1404::3000]:443
+2025-12-17 18:44:12 DEBUG rquest.util.client.connect.http - connecting to [2001:df2:e500:ed1a::1]:443
+2025-12-17 18:44:12 DEBUG rquest.util.client.connect.http - connected to [2406:2000:e4:1404::3000]:443
+2025-12-17 18:44:12 DEBUG rquest.util.client.connect.http - connected to [2001:df2:e500:ed1a::1]:443
+2025-12-17 18:44:12 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2025-12-17 18:44:12 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://search.yahoo.com/, alpn_protos: None, network: default }
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Last-Access'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Last-Access-Global'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'GeoIP'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'NetworkProbeLimit'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Uniq'
+2025-12-17 18:44:13 INFO primp - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=toxonomy%20site%3Apubmed.ncbi.nlm.nih.gov%20author 200
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'lkl'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'A1'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'A3'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'A1S'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting secure cookie 'dflow'
+2025-12-17 18:44:13 INFO primp - response: https://search.yahoo.com/search;_ylt=Ad27k8DLqu2yIiegC2yFXgD-;_ylu=0eUTyyREZPJ2CnfbvPx070LBpmHMEELkPLXdju-U0wpKWRo?p=toxonomy+site%3Apubmed.ncbi.nlm.nih.gov+author 200
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("arc=us"), name: Indexed(0, 3), value: Indexed(4, 6), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 18:44:13 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("lb=en"), name: Indexed(0, 2), value: Indexed(3, 5), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 18:44:13 DEBUG rquest.connect - starting new connection: https://www.mojeek.com/
+2025-12-17 18:44:13 DEBUG rquest.util.client.connect.dns - resolving www.mojeek.com
+2025-12-17 18:44:14 DEBUG rquest.util.client.connect.http - connecting to 5.102.173.68:443
+2025-12-17 18:44:14 DEBUG rquest.util.client.connect.http - connected to 5.102.173.68:443
+2025-12-17 18:44:15 INFO primp - response: https://www.mojeek.com/search?q=toxonomy+site%3Apubmed.ncbi.nlm.nih.gov+author 200
+2025-12-17 18:44:15 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://www.mojeek.com/, alpn_protos: None, network: default }
+2025-12-17 18:44:15 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("us=us"), name: Indexed(0, 2), value: Indexed(3, 5), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 18:44:15 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("useLocation=0"), name: Indexed(0, 11), value: Indexed(12, 13), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 18:44:15 DEBUG rquest.connect - starting new connection: https://search.brave.com/
+2025-12-17 18:44:15 DEBUG rquest.util.client.connect.dns - resolving search.brave.com
+2025-12-17 18:44:15 DEBUG rquest.util.client.connect.http - connecting to [2600:9000:2179:ec00:5:a6ac:6100:93a1]:443
+2025-12-17 18:44:15 DEBUG rquest.util.client.connect.http - connected to [2600:9000:2179:ec00:5:a6ac:6100:93a1]:443
+2025-12-17 18:44:16 DEBUG rquest.util.client.pool - pooling idle connection for PoolKey { uri: https://search.brave.com/, alpn_protos: None, network: default }
+2025-12-17 18:44:17 DEBUG cookie_store.cookie_store - inserting secure cookie 'useLocation'
+2025-12-17 18:44:17 INFO primp - response: https://search.brave.com/search?q=toxonomy+site%3Apubmed.ncbi.nlm.nih.gov+author&source=web 200
+2025-12-17 18:44:17 INFO root - Host pubmed.ncbi.nlm.nih.gov: 10 results from query 'toxonomy site:pubmed.ncbi.nlm.nih.gov author'
+2025-12-17 18:44:17 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("us=us"), name: Indexed(0, 2), value: Indexed(3, 5), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 18:44:17 DEBUG rquest.util.client.pool - reuse idle connection for PoolKey { uri: https://en.wikipedia.org/, alpn_protos: None, network: default }
+2025-12-17 18:44:17 DEBUG cookie_store.cookie_store - inserting Set-Cookie 'Cookie { cookie_string: Some("useLocation=0"), name: Indexed(0, 11), value: Indexed(12, 13), expires: None, max_age: None, domain: None, path: None, secure: None, http_only: None, same_site: None, partitioned: None }'
+2025-12-17 18:44:17 DEBUG rquest.util.client.pool - reuse idle connection for PoolKey { uri: https://search.brave.com/, alpn_protos: None, network: default }
+2025-12-17 18:44:17 DEBUG cookie_store.cookie_store - inserting secure cookie 'WMF-Uniq'
+2025-12-17 18:44:17 INFO primp - response: https://en.wikipedia.org/w/api.php?action=opensearch&profile=fuzzy&limit=1&search=toxonomy%20site%3Alinkedin.com/in/ 200
+2025-12-17 18:44:18 DEBUG cookie_store.cookie_store - inserting secure cookie 'useLocation'
+2025-12-17 18:44:18 INFO primp - response: https://search.brave.com/search?q=toxonomy+site%3Alinkedin.com%2Fin%2F&source=web 200
+2025-12-17 18:44:19 INFO root - Host linkedin.com: 10 results from query 'toxonomy site:linkedin.com/in/'
+2025-12-17 18:44:19 INFO root - Found 1 profile links and 10 non-profile URLs for query=toxonomy
+2025-12-17 18:44:19 INFO root - sse: enqueue event: {'type': 'search_results', 'results': [{'title': 'Sebsebe Demissew - Professor of Biodiversity and Plant Taxonomy at Addis Ababa University | LinkedIn', 'href': 'https://www.linkedin.com/in/sebsebe-demissew-272710124/', 'body': 'Professor of Biodiversity and Plant Taxonomy at Addis Ababa University · Experience: Addis Ababa University · Location: Ethiopia · 500+ connections on LinkedIn. View Sebsebe Demissew’s profile on LinkedIn, a professional community of 1 billion members.'}]}
+2025-12-17 18:44:19 INFO root - sse: yielding event: {'type': 'search_results', 'results': [{'title': 'Sebsebe Demissew - Professor of Biodiversity and Plant Taxonomy at Addis Ababa University | LinkedIn', 'href': 'https://www.linkedin.com/in/sebsebe-demissew-272710124/', 'body': 'Professor of Biodiversity and Plant Taxonomy at Addis Ababa University · Experience: Addis Ababa University · Location: Ethiopia · 500+ connections on LinkedIn. View Sebsebe Demissew’s profile on LinkedIn, a professional community of 1 billion members.'}]}
+2025-12-17 18:44:19 INFO root - Starting scrape_progress for query=toxonomy (urls=10)
+2025-12-17 18:44:19 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0, 'url': None, 'processed_so_far': 0}
+2025-12-17 18:44:19 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/685479/ (idx=1/10)
+2025-12-17 18:44:19 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0, 'url': None, 'processed_so_far': 0}
+2025-12-17 18:44:19 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 0, 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/', 'processed_so_far': 0}
+2025-12-17 18:44:19 INFO root - sse: yielding event: {'type': 'progress', 'percent': 0, 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/', 'processed_so_far': 0}
+2025-12-17 18:44:20 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:44:20 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:46:30 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/685479/ (percent=10)
+2025-12-17 18:46:30 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/685479/ (percent=10)
+2025-12-17 18:46:30 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 10, 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/', 'processed_so_far': 0}
+2025-12-17 18:46:30 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 10, 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/', 'processed_so_far': 0}
+2025-12-17 18:46:30 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/4573549/ (idx=2/10)
+2025-12-17 18:46:30 INFO root - sse: yielding event: {'type': 'progress', 'percent': 10, 'url': 'https://pubmed.ncbi.nlm.nih.gov/685479/', 'processed_so_far': 0}
+2025-12-17 18:46:30 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/22139910/ (idx=2/10)
+2025-12-17 18:46:30 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 10, 'url': 'https://pubmed.ncbi.nlm.nih.gov/4573549/', 'processed_so_far': 0}
+2025-12-17 18:46:30 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 10, 'url': 'https://pubmed.ncbi.nlm.nih.gov/22139910/', 'processed_so_far': 0}
+2025-12-17 18:46:30 INFO root - sse: yielding event: {'type': 'progress', 'percent': 10, 'url': 'https://pubmed.ncbi.nlm.nih.gov/22139910/', 'processed_so_far': 0}
+2025-12-17 18:46:31 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:46:31 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 18:49:03 INFO root - URL complete: https://pubmed.ncbi.nlm.nih.gov/22139910/ (percent=20)
+2025-12-17 18:49:03 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/22139910/', 'processed_so_far': 0}
+2025-12-17 18:49:03 INFO root - sse: yielding event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/22139910/', 'processed_so_far': 0}
+2025-12-17 18:49:03 INFO root - Starting crawl for url=https://pubmed.ncbi.nlm.nih.gov/24716516/ (idx=3/10)
+2025-12-17 18:49:03 INFO root - sse: enqueue event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24716516/', 'processed_so_far': 0}
+2025-12-17 18:49:03 INFO root - sse: yielding event: {'type': 'progress', 'percent': 20, 'url': 'https://pubmed.ncbi.nlm.nih.gov/24716516/', 'processed_so_far': 0}
+2025-12-17 18:49:04 DEBUG asyncio - Using proactor: IocpProactor

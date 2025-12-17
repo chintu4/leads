@@ -11,12 +11,7 @@ export function App() {
         
       </div>
 
-      <h1>Lead Finder</h1>
-      <p>
-        Use this UI to search and enrich leads from the backend. Edit <code>src/LeadFinder.tsx</code> to customize.
-      </p>
-
-      <LeadFinder />
+          <LeadFinder />
 
       <hr style={{ margin: "2rem 0" }} />
 

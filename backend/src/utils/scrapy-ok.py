@@ -13,6 +13,11 @@ class MySpider(scrapy.Spider):
                 meta={"playwright": True}
             )
 
+    async def start(self):
+        """Async-compatible start() that yields the existing start_requests() for Scrapy 2.13+"""
+        for req in self.start_requests():
+            yield req
+
     def parse(self, response):
         title = response.css("title::text").get()
         print("TITLE:", title)

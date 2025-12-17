@@ -4,6 +4,7 @@ import importlib
 from urllib.parse import urljoin
 from scrapy.settings import Settings
 from scrapy.utils.project import get_project_settings
+import logging
 
 
 class MySpider(scrapy.Spider):
@@ -19,6 +20,24 @@ class MySpider(scrapy.Spider):
         self.extracted_data = {}
         # External collector (list) can be passed in for programmatic use
         self.collected = collected if isinstance(collected, list) else []
+        self.logger = logging.getLogger(__name__)
+
+    def start_requests(self):
+        # If start_urls class attribute present, iterate those; otherwise use start_url
+        urls = []
+        if getattr(self, 'start_urls', None):
+            urls = list(self.start_urls)
+        else:
+            urls = [self.start_url]
+
+        for u in urls:
+            self.logger.info("Starting request for URL: %s", u)
+            yield scrapy.Request(
+                url=u,
+                callback=self.parse,
+                errback=self.errback_handler,
+                meta={"playwright": True}  # Triggers headless browser
+            )
 
     def start_requests(self):
         # If start_urls class attribute present, iterate those; otherwise use start_url
@@ -36,42 +55,59 @@ class MySpider(scrapy.Spider):
                 meta={"playwright": True}  # Triggers headless browser
             )
 
+    async def start(self):
+        """Async-compatible start() for Scrapy 2.13+ (keeps backward compat with start_requests)."""
+        for req in self.start_requests():
+            yield req
+
     def parse(self, response):
         """Extract lead enrichment data from the webpage"""
-        # Extract emails
-        emails = self.extract_emails(response)
+        self.logger.info("Parsing response for URL: %s, status: %s", response.url, response.status)
+        try:
+            # Extract emails
+            emails = self.extract_emails(response)
+            self.logger.debug("Extracted emails: %s", emails)
 
-        # Extract phone numbers
-        phones = self.extract_phones(response)
+            # Extract phone numbers
+            phones = self.extract_phones(response)
+            self.logger.debug("Extracted phones: %s", phones)
 
-        # Extract LinkedIn URLs
-        linkedin_urls = self.extract_linkedin(response)
+            # Extract LinkedIn URLs
+            linkedin_urls = self.extract_linkedin(response)
+            self.logger.debug("Extracted LinkedIn URLs: %s", linkedin_urls)
 
-        # Extract location/HQ info
-        location = self.extract_location(response)
+            # Extract location/HQ info
+            location = self.extract_location(response)
+            self.logger.debug("Extracted location: %s", location)
 
-        # Extract company info
-        company_info = self.extract_company_info(response)
+            # Extract company info
+            company_info = self.extract_company_info(response)
+            self.logger.debug("Extracted company info: %s", company_info)
 
-        self.extracted_data = {
-            "url": response.url,
-            "title": response.css("title::text").get(default="").strip(),
-            "emails": emails,
-            "phones": phones,
-            "linkedin_urls": linkedin_urls,
-            "location": location,
-            "company_info": company_info,
-            "text_content": self.extract_text(response)
-        }
+            self.extracted_data = {
+                "url": response.url,
+                "title": response.css("title::text").get(default="").strip(),
+                "emails": emails,
+                "phones": phones,
+                "linkedin_urls": linkedin_urls,
+                "location": location,
+                "company_info": company_info,
+                "text_content": self.extract_text(response)
+            }
 
-        # Append to external collector if provided (useful for programmatic runs)
-        if isinstance(self.collected, list):
-            try:
-                self.collected.append(self.extracted_data)
-            except Exception:
-                self.logger.exception("Failed to append extracted data to collector")
+            self.logger.info("Successfully extracted data for URL: %s", response.url)
 
-        yield self.extracted_data
+            # Append to external collector if provided (useful for programmatic runs)
+            if isinstance(self.collected, list):
+                try:
+                    self.collected.append(self.extracted_data)
+                except Exception:
+                    self.logger.exception("Failed to append extracted data to collector")
+
+            yield self.extracted_data
+        except Exception as e:
+            self.logger.exception("Error during parsing for URL: %s", response.url)
+            yield {"error": str(e), "url": response.url}
 
     def extract_emails(self, response):
         """Extract email addresses from page"""
@@ -131,10 +167,16 @@ class MySpider(scrapy.Spider):
 
     def errback_handler(self, failure):
         """Handle request failures"""
-        self.logger.error(f"Request failed: {failure}")
+        url = failure.request.url if hasattr(failure, 'request') else "unknown"
+        self.logger.error("Request failed for URL: %s, failure: %s", url, failure)
+        self.logger.error("Failure type: %s, failure value: %s", type(failure), failure.value if hasattr(failure, 'value') else 'N/A')
+        if hasattr(failure, 'request') and hasattr(failure.request, 'meta'):
+            self.logger.error("Request meta: %s", failure.request.meta)
         self.extracted_data = {
             "error": str(failure),
-            "url": failure.request.url if hasattr(failure, 'request') else "unknown"
+            "url": url,
+            "failure_type": str(type(failure)),
+            "failure_value": str(failure.value) if hasattr(failure, 'value') else 'N/A'
         }
 
 from scrapy.crawler import CrawlerProcess
@@ -160,7 +202,17 @@ def crawl_url(start_url, settings=None, timeout=None):
     This convenience helper is suitable for local POCs. For production you
     should run Scrapy in a worker process or use a queue.
     """
+    import logging
+    logger = logging.getLogger(__name__)
+    logger.info("Starting crawl_url for URL: %s", start_url)
     collected = []
+    # Reduce Scrapy logger noise for programmatic runs (avoid repeated startup messages)
+    try:
+        import logging
+        logging.getLogger('scrapy').setLevel(logging.WARNING)
+        logging.getLogger('scrapy.utils.log').setLevel(logging.WARNING)
+    except Exception:
+        pass
 
     if settings is None:
         try:
@@ -175,9 +227,44 @@ def crawl_url(start_url, settings=None, timeout=None):
         s.setdict(settings)
         proc_settings = s
 
-    process = CrawlerProcess(proc_settings)
-    process.crawl(MySpider, start_url=start_url, collected=collected)
-    process.start()  # Blocks until finished
+    logger.debug("Using settings: %s", dict(proc_settings))
+
+    # Run using CrawlerRunner so we can control reactor startup safely across threads
+    from scrapy.crawler import CrawlerRunner
+    from twisted.internet import reactor, defer
+    import threading
+
+    runner = CrawlerRunner(settings=proc_settings)
+
+    @defer.inlineCallbacks
+    def _run():
+        logger.info("CrawlerRunner starting crawl for URL: %s", start_url)
+        yield runner.crawl(MySpider, start_url=start_url, collected=collected)
+
+    d = _run()
+
+    def _stop(_=None):
+        try:
+            logger.info("Stopping reactor for URL: %s", start_url)
+            reactor.stop()
+        except Exception as e:
+            logger.exception("Error stopping reactor: %s", e)
+
+    d.addBoth(_stop)
+
+    try:
+        # If we're in the main thread allow reactor to install signal handlers; otherwise avoid it.
+        if threading.current_thread() is threading.main_thread():
+            logger.debug("Running reactor in main thread for URL: %s", start_url)
+            reactor.run()
+        else:
+            logger.debug("Running reactor in worker thread for URL: %s", start_url)
+            reactor.run(installSignalHandlers=False)
+    except Exception as e:
+        # reactor may already be running in some environments; just return what we have
+        logger.exception("Error running reactor for URL: %s", e)
+
+    logger.info("Crawl completed for URL: %s, collected %d items", start_url, len(collected))
     return collected
 
 
