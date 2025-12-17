@@ -116,8 +116,8 @@ def google_callback(request: Request, code: str | None = None, state: str | None
 """
 
     response = HTMLResponse(content=html)
-    # set session cookie (httponly)
-    response.set_cookie(key="session", value=session_id, httponly=True, path="/")
+    # set session cookie (httponly). For cross-site use (i.e., frontend on github pages) require Secure + SameSite=None
+    response.set_cookie(key="session", value=session_id, httponly=True, path="/", secure=True, samesite="none")
 
     return response
 
@@ -136,8 +136,9 @@ def get_session(request: Request):
 @router.post("/auth/logout")
 def logout(request: Request):
     session_id = request.cookies.get("session")
-    response = {"ok": True}
     if session_id and session_id in _sessions:
         del _sessions[session_id]
     # instruct client to clear cookie
-    return Response(content="", status_code=204)
+    response = Response(content="", status_code=204)
+    response.delete_cookie(key="session", path="/")
+    return response

@@ -25,11 +25,22 @@ from src.handlers import auth_google
 
 app = FastAPI()
 
-# Allow frontend dev server (port 3000) to access the API in development
+# Configure allowed origins via ALLOWED_ORIGINS env var (comma-separated). Defaults to dev hosts and the GitHub Pages origin used for the static site.
+_raw_allowed = os.getenv("ALLOWED_ORIGINS", "http://localhost:3000,http://127.0.0.1:3000,https://chintu4.github.io")
+if _raw_allowed.strip() == "*":
+    _allow_origins = ["*"]
+else:
+    _allow_origins = [o.strip() for o in _raw_allowed.split(",") if o.strip()]
+
+# When allowing all origins, browsers disallow credentialed requests; only enable credentials for explicit list of origins.
+_allow_credentials = True
+if _allow_origins == ["*"]:
+    _allow_credentials = False
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000", "http://127.0.0.1:3000"],
-    allow_credentials=True,
+    allow_origins=_allow_origins,
+    allow_credentials=_allow_credentials,
     allow_methods=["*"],
     allow_headers=["*"],
 )

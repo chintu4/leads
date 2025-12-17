@@ -444,3 +444,18 @@ RuntimeWarning: Enable tracemalloc to get the object allocation traceback
 2025-12-17 18:59:54 INFO root - sse: enqueue event: {'type': 'done', 'percent': 100, 'results': []}
 2025-12-17 19:14:44 INFO STDOUT - INFO:     127.0.0.1:50424 - "GET /auth/session HTTP/1.1" 200 OK
 2025-12-17 19:14:45 INFO STDOUT - INFO:     127.0.0.1:50424 - "GET /auth/session HTTP/1.1" 200 OK
+2025-12-17 20:46:18 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 20:47:46 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 20:47:49 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 20:47:49 INFO httpx - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-12-17 20:47:49 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 20:47:49 INFO httpx - HTTP Request: OPTIONS http://testserver/scrape "HTTP/1.1 200 OK"
+2025-12-17 20:47:50 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 20:47:50 INFO httpx - HTTP Request: GET http://testserver/auth/google/callback?code=somecode&state=teststate123 "HTTP/1.1 200 OK"
+2025-12-17 20:48:26 INFO src.logging_config - Logging initialized. File: C:\Users\dsjapnc\Desktop\leads\backend\logs\backend.log
+2025-12-17 20:48:28 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 20:48:28 INFO httpx - HTTP Request: GET http://testserver/ "HTTP/1.1 200 OK"
+2025-12-17 20:48:28 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 20:48:28 INFO httpx - HTTP Request: OPTIONS http://testserver/scrape "HTTP/1.1 200 OK"
+2025-12-17 20:48:28 DEBUG asyncio - Using proactor: IocpProactor
+2025-12-17 20:48:28 INFO httpx - HTTP Request: GET http://testserver/auth/google/callback?code=somecode&state=teststate123 "HTTP/1.1 200 OK"
