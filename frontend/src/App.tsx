@@ -1,22 +1,27 @@
-import { APITester } from "./APITester";
+
+import LeadFinder from "./LeadFinder";
 import "./index.css";
 
-import logo from "./logo.svg";
-import reactLogo from "./react.svg";
+
 
 export function App() {
   return (
     <div className="app">
       <div className="logo-container">
-        <img src={logo} alt="Bun Logo" className="logo bun-logo" />
-        <img src={reactLogo} alt="React Logo" className="logo react-logo" />
+        
       </div>
 
-      <h1>Bun + React</h1>
+      <h1>Lead Finder</h1>
       <p>
-        Edit <code>src/App.tsx</code> and save to test HMR
+        Use this UI to search and enrich leads from the backend. Edit <code>src/LeadFinder.tsx</code> to customize.
       </p>
-      <APITester />
+
+      <LeadFinder />
+
+      <hr style={{ margin: "2rem 0" }} />
+
+      
+      
     </div>
   );
 }

@@ -185,3 +185,39 @@ code {
     animation: none !important;
   }
 }
+
+/* LeadFinder styles */
+.lead-finder {
+  margin: 1.5rem auto;
+  max-width: 1100px;
+  text-align: left;
+}
+.search-row {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.search-input {
+  flex: 1;
+  padding: 0.6rem;
+  border-radius: 8px;
+  border: 2px solid #1a1a1a;
+  background: #1a1a1a;
+  color: #fbf0df;
+}
+.search-button, .export-button, .process-button {
+  background: #fbf0df;
+  color: #1a1a1a;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.filter-row { margin: 0.5rem 0 1rem 0; }
+.filter-input { width: 100%; padding: 0.5rem; border-radius: 8px; background:#111; color:#fff; border:1px solid #333 }
+.table-wrap { overflow: auto; background: #111; padding: 0.5rem; border-radius: 8px; border:1px solid #333 }
+.results-table { width: 100%; border-collapse: collapse; color: #fbf0df }
+.results-table th, .results-table td { padding: 0.5rem; border-bottom: 1px solid #222; text-align:left }
+.results-table th { font-weight: 700; }
+.error { color: #ff7b7b; margin-top: 0.5rem }
+
