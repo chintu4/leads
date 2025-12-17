@@ -146,5 +146,5 @@ if __name__ == "__main__":
     # Allow development reload to be controlled via environment variable (DEV_RELOAD)
     reload_flag = os.getenv("DEV_RELOAD", "false").lower() in ("1", "true", "yes")
     port = int(os.getenv("PORT", "8000"))
-    uvicorn.run("main:app", host="127.0.0.1", port=port, reload=reload_flag)
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=reload_flag)
 
