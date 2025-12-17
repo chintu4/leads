@@ -1,15 +1,20 @@
-This is webscrapper for potiential leads finder.
-## working
-the application works on
-1. webdockering search engines like duckduckgo and other search engine provided by ddgs library
-2. It attempts to crawl internal links to find leads details and scrape using scrapy +playwright python library
-3. The frontend is built using react +typescript and backend using fastapi python framework
+# Lead Finder
+
+Lead Finder — a lightweight **web scraper** for discovering potential leads (researchers, professionals, and organizations). Fast, configurable, and designed for streaming results to a web frontend.
+
+## How It Works
+
+How it works — at a glance:
+
+1. 🔍 **Querying search engines** (DuckDuckGo via the `ddgs` library) to discover candidate pages
+2. 🕷️ **Crawling internal links** to extract lead details and scraping via Scrapy and Playwright
+3. 🌐 **Serving a frontend** built with React + TypeScript and a backend powered by FastAPI
 
 ## Project Overview
 
-This is a lead finding application that searches for potential leads (researchers, professionals, etc.) from academic and professional platforms. It consists of two main components:
+Lead Finder is a **lead-finding application** that searches for potential leads (researchers, professionals, and organizations) across academic and professional platforms. It has two main components: a backend service for scraping and processing, and a frontend UI for interacting with results.
 
-### Backend (FastAPI)
+### Backend — FastAPI (Server) 🔧
 - **Purpose**: Handles web scraping, crawling, and lead processing
 - **Key Features**:
   - Searches DuckDuckGo for initial results
@@ -20,7 +25,7 @@ This is a lead finding application that searches for potential leads (researcher
   - Google Sheets export integration
   - OAuth authentication for Google services
 
-### Frontend (React + TypeScript)
+### Frontend — React + TypeScript (Client) 🎯
 - **Purpose**: User interface for searching, displaying results, and managing leads
 - **Key Features**:
   - Real-time progress updates via SSE
@@ -32,17 +37,17 @@ This is a lead finding application that searches for potential leads (researcher
 ## Architecture
 
 ### Data Flow
-1. User enters a search query in the frontend
-2. Backend performs DuckDuckGo search to get initial URLs
-3. Optional crawling phases: Scrapy for quick extraction, Playwright for deep crawling
-4. Leads are processed and enriched with contact information
-5. Results are streamed back to frontend via SSE
-6. Users can export results to CSV or Google Sheets
+1. 👤 User enters a search query in the frontend
+2. 🔍 Backend performs DuckDuckGo search to get initial URLs
+3. 🕷️ Optional crawling phases: Scrapy for quick extraction, Playwright for deep crawling
+4. ⚙️ Leads are processed and enriched with contact information
+5. 📊 Results are streamed back to frontend via SSE
+6. 📤 Users can export results to CSV or Google Sheets
 
 ### Key Technologies
-- **Backend**: Python, FastAPI, Scrapy, Playwright, DuckDuckGo Search
+- **Backend**: Python, FastAPI, Scrapy, Playwright, DuckDuckGo
 - **Frontend**: React, TypeScript, CSS
-- **Deployment**: Render (backend), potentially Vercel/Netlify (frontend)
+- **Deployment**: Render (backend); Vercel / Netlify (frontend)
 
 ## Key Files & Responsibilities
 
@@ -92,21 +97,21 @@ pytest  # From repo root, runs backend and frontend tests
 - `DEEP_MAX_PAGES`: Maximum pages to crawl deeply
 
 ### Search Domains
-- `pubmed`: Academic publications
-- `linkedin`: Professional profiles
-- Custom domains can be added via settings
+- 🧾 `pubmed` — Academic publications
+- 💼 `linkedin` — Professional profiles
+- ➕ Custom domains can be added via settings
 
 ## Security & Best Practices
 
-- Playwright crawling is lazy-loaded to avoid import issues
-- Defensive error handling for external dependencies
-- Server-side filtering prioritizes profile-like URLs
-- OAuth flow for Google Sheets export
-- No crawling of sites that block automation by default
+- Playwright is lazy-loaded to avoid import-time failures and reduce startup friction
+- Defensive error handling is used for all external dependencies and network operations
+- Server-side heuristics prioritize profile-like URLs to improve result quality
+- Google Sheets export uses OAuth for secure access
+- The crawler avoids sites that explicitly block automation by default
 
 ## Deployment
 
-- Backend deployed on Render at `https://leads-59wq.onrender.com`
-- Frontend can be deployed to Vercel, Netlify, or similar platforms
-- Ensure CORS is configured for cross-origin requests
+- The backend is deployed to Render: `https://leads-59wq.onrender.com`
+- The frontend can be deployed to Vercel, Netlify, or similar platforms
+- Ensure CORS and environment variables are configured appropriately for production
 
